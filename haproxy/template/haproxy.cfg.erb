@@ -1,0 +1,46 @@
+global
+log 127.0.0.1 local1 debug
+
+chroot /var/lib/haproxy
+pidfile /var/run/haproxy.pid
+user haproxy
+group haproxy
+daemon
+
+defaults
+log global
+mode http
+option dontlognull
+timeout connect 10000
+timeout client 300000
+timeout server 300000
+maxconn 60000
+retries 3
+balance roundrobin
+
+frontend https_cfg
+        bind 0.0.0.0:443
+        mode tcp
+        maxconn 300
+        default_backend web_pool_https
+
+backend web_pool_https
+mode tcp
+server web1 web1:443 check
+#server web2 web2:443 check
+
+frontend http-cfg
+        bind 0.0.0.0:80
+        mode tcp
+        maxconn 300
+        default_backend web_pool_http
+
+backend web_pool_http
+mode tcp
+server web1 web1:80 check
+#server web2 web2:80 check
+
+
+listen admin
+    bind *:8080
+    stats enable
