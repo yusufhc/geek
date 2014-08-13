@@ -26,6 +26,18 @@ frontend https_cfg
 
 backend web_pool_https
 mode tcp
+<% if node[:opsworks][:layers][:haproxy] -%>
+# node[:opsworks][:layers][:haproxy]
+<% end -%>
+
+<% if node[:opsworks][:layers][:web] -%>
+# node[:opsworks][:layers][:haproxy]
+<% end -%>
+
+<% if node[:opsworks][:layers].attribute?("haproxy") -%>
+# node[:opsworks][:layers].attribute?("haproxy")
+<% end -%>
+
 #server web1 web1:443 check
 #server web2 web2:443 check
 
