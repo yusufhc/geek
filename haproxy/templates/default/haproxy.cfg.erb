@@ -27,8 +27,8 @@ frontend https_cfg
 backend web_pool_https
 mode tcp
 
-
-<%= node[:opsworks][:layers][:lb][:name] %>
+#<%= node[:opsworks][:layers][:lb][:instances].first[:private_ip] %>
+#<%= node[:opsworks][:layers][:lb][:name] %>
 
 <% if node[:opsworks][:layers][:HAProxy] -%>
 # node[:opsworks][:layers][:haproxy]
