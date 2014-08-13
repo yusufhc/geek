@@ -26,7 +26,7 @@ frontend https_cfg
 
 backend web_pool_https
 mode tcp
-<% if node[:opsworks][:layers][:haproxy] -%>
+<% if node[:opsworks][:layers][:HAProxy] -%>
 # node[:opsworks][:layers][:haproxy]
 <% end -%>
 
@@ -34,7 +34,7 @@ mode tcp
 # node[:opsworks][:layers][:haproxy]
 <% end -%>
 
-<% if node[:opsworks][:layers].attribute?("haproxy") -%>
+<% if node[:opsworks][:layers].attribute?("HAProxy") -%>
 # node[:opsworks][:layers].attribute?("haproxy")
 <% end -%>
 
