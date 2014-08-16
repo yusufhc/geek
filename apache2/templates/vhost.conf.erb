@@ -1,0 +1,159 @@
+NameVirtualHost *:80
+
+#################################################################
+#
+# All other HTTP Domains
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName flush
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.bp.com
+  ErrorDocument 403 http://www.bp.com
+  ErrorDocument 500 http://www.bp.com
+  ErrorDocument 503 http://www.bp.com
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_http_default.conf"
+  RewriteRule    ^/$  http://www.bp.com  [NC,L,R]
+
+</VirtualHost>
+
+#################################################################
+#
+# bp.com
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName www.bp.com
+  ServerAlias origin-prod-www-navitas.bp.com
+  ServerAlias bp.com
+
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.bp.com
+  ErrorDocument 403 http://www.bp.com
+  ErrorDocument 500 http://www.bp.com
+  ErrorDocument 503 http://www.bp.com
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_bp.conf"
+
+  ErrorLog "/var/log/httpd/bp_error.log"
+  CustomLog /var/log/httpd/bp_access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+
+</VirtualHost>
+
+#################################################################
+#
+# aral.de
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName www.aral.de
+  ServerAlias origin-prod-www-navitas.aral.de
+  ServerAlias aral.de
+
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.aral.de
+  ErrorDocument 403 http://www.aral.de
+  ErrorDocument 500 http://www.aral.de
+  ErrorDocument 503 http://www.aral.de
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_aral.conf"
+
+  ErrorLog "/var/log/httpd/aral_error.log"
+  CustomLog /var/log/httpd/aral_access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+
+</VirtualHost>
+
+#################################################################
+#
+# castrol.com
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName www.castrol.com
+  ServerAlias origin-prod-www-navitas.castrol.com
+  ServerAlias castrol.com
+
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.castrol.com
+  ErrorDocument 403 http://www.castrol.com
+  ErrorDocument 500 http://www.castrol.com
+  ErrorDocument 503 http://www.castrol.com
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_castrol.conf"
+
+  ErrorLog "/var/log/httpd/castrol_error.log"
+  CustomLog /var/log/httpd/castrol_access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+
+</VirtualHost>
+
+#################################################################
+#
+# deutschebp.de
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName www.deutschebp.de
+  ServerAlias origin-prod-www-navitas.deutschebp.de
+  ServerAlias deutschebp.de
+
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.deutschebp.de
+  ErrorDocument 403 http://www.deutschebp.de
+  ErrorDocument 500 http://www.deutschebp.de
+  ErrorDocument 503 http://www.deutschebp.de
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_deutschebp.conf"
+
+  ErrorLog "/var/log/httpd/deutschebp_error.log"
+  CustomLog /var/log/httpd/deutschebp_access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+
+</VirtualHost>
+
+
+#################################################################
+#
+# wildbeancafe.com
+#
+#################################################################
+<VirtualHost *:80>
+
+  ServerName www.wildbeancafe.com
+  ServerAlias origin-prod-www-navitas.wildbeancafe.com
+  ServerAlias wildbeancafe.com
+
+  DocumentRoot /var/www/html
+
+  ErrorDocument 404 http://www.wildbeancafe.com
+  ErrorDocument 403 http://www.wildbeancafe.com
+  ErrorDocument 500 http://www.wildbeancafe.com
+  ErrorDocument 503 http://www.wildbeancafe.com
+
+  RewriteEngine On
+
+  Include "/etc/httpd/conf.d/urlredirect_wildbeancafe.conf"
+
+  ErrorLog "/var/log/httpd/wildbeancafe_error.log"
+  CustomLog /var/log/httpd/wildbeancafe_access.log "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-agent}i\""
+
+</VirtualHost>

@@ -1,0 +1,1384 @@
+cat urlredirect_aral.conf 
+RewriteCond    %{HTTP_HOST} ^aral.de$
+RewriteRule    ^/$ http://www.aral.de$1 [NC,L,R]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5015&contentId=58606$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralhomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5025&contentId=58976$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001741&contentId=50710$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design/die-marke.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001742&contentId=50718$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design/das-design/logo.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001743&contentId=50742$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design/das-design/markenclaim.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001744&contentId=50767$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design/das-design/schrift.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001746&contentId=7024445$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/design/das-design/gestaltungsprinzip.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/protectedLogin.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5025$
+RewriteRule     ^/(.*)$ http://download.aral-design.de/login?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralhomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5030$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001571&contentId=51300$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design/aral-brand.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001572&contentId=51309$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design/the-design/aral-logo.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013373&contentId=7027430$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design/the-design/brand-claim.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001573&contentId=51311$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design/the-design/typeface.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001578&contentId=51337$
+RewriteRule     ^/(.*)$ http://www.aral.de/en/design/the-design/design-principle.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/protectedLogin.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5030$
+RewriteRule     ^/(.*)$ http://download.aral-design.com/login?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5000&contentId=58604$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000000&contentId=56042$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung/wissen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000050&contentId=56054$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung/kraftstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000120&contentId=58687$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung/zukunft.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000140&contentId=59070$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung/faq.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000320&contentId=58667$
+RewriteRule     ^/(.*)$ http://www.aral.de/de/forschung/die-aral-forschung.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelStationFinderSearch.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001371&contentId=58630$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/ihre-tankstelle/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/currentPrice.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001412&contentId=58694$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/kraftstoffe-und-preise/aktuelle-kraftstoffpreise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5020&contentId=58609$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001370&contentId=51147$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/ihre-tankstelle.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001480&contentId=51198$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/aral-card.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001500&contentId=56008$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/ueber-aral-luxembourg.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001465&contentId=51187$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg/ihre-tankstelle/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5015$
+RewriteRule     ^/(.*)$ http://www.aral.de/de_lu/luxembourg.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001180&contentId=51305$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg/votre-station-service.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001290&contentId=57111$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg/aral-card.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001310&contentId=56575$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg/aral-au-luxembourg.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelStationFinderSearch.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001181&contentId=58636$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg/votre-station-service/depisteur-de-stations-service.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/currentPrice.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001222&contentId=58625$
+RewriteRule     ^/(.*)$ http://www.aral.de/fr_lu/luxembourg/carburants-et-prix/prix-actuels-des-carburants.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000752&contentId=7053861$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-bistro-und-waschen/petitbistro/hei?etraenke.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationFinderAction.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stnFinderSubmitAction.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationFinderRefineSearch.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelstationhomepage.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/browsebytheme.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/mediathek.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralhomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5005&contentId=58650$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectionbodycopy.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9020977&contentId=7080768$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/singlesignon.do$
+RewriteCond     %{QUERY_STRING} ^contentId=56484&toolId=ADVENTSKALENDER&categoryId=4000982$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/login.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000982$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationFinderModuleSubmitAction.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000521&contentId=58622$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationfindermodulesubmitaction.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000521&contentId=58622$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectionbodycopy.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9034857&contentId=7077576$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001062&contentId=51071$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9023613&contentId=7043608$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationfinderaction.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000521&contentId=58622$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/login.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000527$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000520&contentId=58023$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000526&contentId=58056$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000982&contentId=56484$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/login.do$
+RewriteCond     %{QUERY_STRING} ^toolId=open&categoryId=4000982$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000522&contentId=58030$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000980&contentId=51213$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9030861&contentId=7056717$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlist.do$
+RewriteCond     %{QUERY_STRING} ^contentId=58624&categoryId=4000527$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035853&contentId=7066475$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/singlesignon.do$
+RewriteCond     %{QUERY_STRING} ^contentId=56484&toolId=THEORIETRAINER&categoryId=4000982$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000903&contentId=7052060$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039948&contentId=7072941$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlist.do$
+RewriteCond     %{QUERY_STRING} ^contentId=58624&toolId=FuelstationWatchList&categoryId=4000527$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000538&contentId=57818$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9028416&contentId=7051696$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-bistro-und-waschen/gutscheinkarten/aral-supercards.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9034910&contentId=7064911$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/gutscheinkarten/geschenkkartenwelt0.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9012997&contentId=7025773$
+RewriteRule     ^/(.*)$ http://www.aral.de/kontakt.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000790&contentId=51229$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericcountryjump.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5007&contentId=7069891$
+RewriteRule     ^/(.*)$ http://www.aral-business.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9042904&contentId=7064938$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9038146&contentId=7069922$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000530&contentId=7024064$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/preisbildung-und--struktur.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/subsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001125&contentId=56569$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000757&contentId=50820$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/aral-online-shop.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/productlanding.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5006&contentId=7076377$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001034&contentId=59140$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000727&contentId=7044183$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-bistro-und-waschen/petitbistro/crossinos-und-paninos.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9032514&contentId=7059552$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff/aral-diesel-im-winter.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9025979&contentId=7070186$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/gutscheinkarten.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000650&contentId=58071$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9020990&contentId=7038938$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-und-tankkarten.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralhomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5005$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000651&contentId=58076$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029138&contentId=7053122$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/login.do$
+RewriteCond     %{QUERY_STRING} ^toolId=open&categoryId=4000983&contentId=58655$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9030076&contentId=7055271$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/bundesliga-tippspiel.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9028315&contentId=7051562$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/kraftstoff-uebersicht.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectionbodycopy.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9042203&contentId=7076525$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectionbodycopy.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9042203&contentId=7076525$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/productlanding.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000722&contentId=57964$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/petit-bistro.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9034422&contentId=7063895$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029300&contentId=7053459$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/oelwegweiser.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011056&contentId=7076419$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/ihre-payback-karte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035294&contentId=7065407$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/aral-schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlistpopup.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000527&contentId=58624$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000539&contentId=7065418$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/aral-ultimate.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000652&contentId=58083$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/waschen-bei-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039194&contentId=7071904$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mobil/apps.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013265&contentId=7025891$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/preisbildung-und--struktur.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9031266&contentId=7057045$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000796&contentId=51254$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000594&contentId=57846$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001000&contentId=51080$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001037&contentId=58247$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner/bewerbung-und-angebote.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019231&contentId=7035294$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/reifendruck-infomanager.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011047&contentId=7020473$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/multipleimagesection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9008683&contentId=7019958$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9036910&contentId=7068089$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-und-dein-verein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001050&contentId=58267$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner/bewerbung-und-angebote.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/subsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001038&contentId=7048606$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000949&contentId=7050409$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013421&contentId=7071513$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/kraftstoffpreis-archiv.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000721&contentId=50876$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/petit-bistro.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029141&contentId=7034454$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/aral-schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035278&contentId=7065417$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/aral-ultimate/aral-ultimate-diesel.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035277&contentId=7065416$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/aral-ultimate/aral-ultimate-102.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039195&contentId=7071858$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001110&contentId=51306$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlistpreference.do$
+RewriteCond     %{QUERY_STRING} ^contentId=58624&categoryId=4000527$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/loadsitelocator.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001372&contentId=58631$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013080&contentId=7039340$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/adblue.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011084&contentId=7019904$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000643&contentId=7025258$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029429&contentId=7053878$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9024880&contentId=7046402$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9024646&contentId=7045881$
+RewriteRule     ^/(.*)$ http://www.aralshop.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000753&contentId=7073505$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/petit-bistro/herzhafte-und-suesse-snacks.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000753&contentId=7073505$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/petit-bistro/herzhafte-und-suesse-snacks.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000649&contentId=58063$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9036276&contentId=7066870$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/kraftstoff-uebersicht/aral-super-e10.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/faq.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9043165&contentId=7020383$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-faqs.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001036&contentId=58244$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/faq.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001051&contentId=58242$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039193&contentId=7071836$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mobil/mobilportal.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035016&contentId=7065090$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/aral-schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026540&contentId=7048693$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/wer-wir-sind.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019227&contentId=7034989$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff/additive.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013263&contentId=7025890$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/preisbildung-und--struktur.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019228&contentId=7034990$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff/geheimnis-des-dieselkraftstoffs.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000593&contentId=57837$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/ottokraftstoff.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000531&contentId=7024069$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000937&contentId=7050398$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9030862&contentId=7056379$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001060&contentId=51040$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039545&contentId=7072523$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/maut---vignetten-und-feinstaubplakette.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029139&contentId=7034455$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/productlanding.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9020952&contentId=7056648$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/gas/aral-autogas.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000985&contentId=51400$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9023894&contentId=7055238$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9012127&contentId=7023969$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000524&contentId=58037$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039196&contentId=7071868$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mobil/geodaten.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000532&contentId=7024070$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/preisbildung-und--struktur.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026547&contentId=7048765$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011232&contentId=7024003$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9024440&contentId=7047034$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/preise-in-europa.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9022518&contentId=7042018$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/aral-ultimate/aral-ultimate-diesel.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001126&contentId=51162$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/faq.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011088&contentId=7020465$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen/payback-allgemein.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001002&contentId=51141$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-geschichte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9012124&contentId=7023589$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9040800&contentId=7074129$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000691&contentId=7065473$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/aral-pflegeprodukte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/articlelisting.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9014543&contentId=7042193$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/popuppreviewtwocol.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001153&contentId=58271$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013261&contentId=7061046$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/ansprechpartner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000799&contentId=56570$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039198&contentId=7071878$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mobil.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/faq.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000544&contentId=57875$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/aral-ultimate/aral-ultimate-faq.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026549&contentId=7048590$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner/ihre-kompetenzen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/articlelisting.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=51310$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/articlelisting.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000698&contentId=58101$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/news.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9008686&contentId=7023971$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/histfuelprice.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001137&contentId=58611$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/kraftstoffpreis-archiv.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011200&contentId=7020145$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/faq.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000595&contentId=57848$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/biogene-kraftstoffzusaetze.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000946&contentId=7050206$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9030925&contentId=7056642$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/gas/aral-autogas/vorteile-von-autogasanlagen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035295&contentId=7065405$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/aral-schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039197&contentId=7071871$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mobil.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029180&contentId=7025259$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/subsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9032877&contentId=7060826$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7061817$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/subsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9029278&contentId=7053443$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/mediathek.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9012994&contentId=7025466$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001061&contentId=7020077$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9040862&contentId=7074207$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/ausbildung-an-der-tankstelle.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026550&contentId=7048601$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/karriere/werden-sie-tankstellenpartner/unsere-unterstuetzung.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/browsebytheme.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001140&contentId=51278$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/mediathek.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/trafficjamfinderhome.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000792&contentId=58637$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000801&contentId=56590$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlistpopup.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000527&contentId=58650$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7059130$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/multipleimagesection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000694&contentId=58117$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/aral-pflegeprodukte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9008684&contentId=7023923$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/membershipserviceregister.do$
+RewriteCond     %{QUERY_STRING} ^toolId=quick&categoryId=4001001$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011462&contentId=7020807$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/marketingsubsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000620&contentId=57836$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/gas/erdgas.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9038847&contentId=7070948$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-und-dein-verein/die-gewinner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9017749&contentId=7032285$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/qualitaet.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/multipleimagesection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000693&contentId=58409$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/aral-pflegeprodukte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001003&contentId=51152$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-geschichte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7072775$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026542&contentId=7048651$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-geschichte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/browsebytheme.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001141&contentId=51281$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/mediathek.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/managedlistingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001146&contentId=7025872$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/broschueren.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001025&contentId=51065$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-die-marke.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019224&contentId=7034986$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/ottokraftstoff/klopffestigkeit.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001068&contentId=51127$
+RewriteRule     ^/(.*)$ http://www.aral-business.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011047&contentId=7022999$
+RewriteRule     ^/(.*)$ http://www.aral.de/payback-und-aktionen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013262&contentId=7025882$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/drehgenehmigungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019229&contentId=7034991$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9008685&contentId=7024001$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/kidstation.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000800&contentId=56576$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/tankstellenfinder-und-routenplaner.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9011198&contentId=7020133$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/waschen-bei-aral/umweltschutz.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9033560&contentId=7061794$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/waschen-bei-aral/super-wash-anlagen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9032878&contentId=7060819$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9038355&contentId=7070263$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/wer-wir-sind.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9019226&contentId=7034988$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/ottokraftstoff/hintergrundwissen/additive.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9039952&contentId=7072973$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/extendedsectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9035296&contentId=7065406$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe/aral-schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/multipleimagesection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000692&contentId=58407$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/aral-pflegeprodukte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001069&contentId=51292$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/login.do$
+RewriteCond     %{QUERY_STRING} ^toolId=quick&categoryId=4001001&contentId=58656$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026543&contentId=7048694$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/sie-stehen-im-mittelpunkt.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7081215$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9024408&contentId=7045313$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/faq.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/browsebytheme.do$
+RewriteCond     %{QUERY_STRING} ^contentId=51278&categoryId=4001140&currentPage=5$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/mediathek.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001127&contentId=7060811$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/faq.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/faq.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000660&contentId=58018$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/waschen-und-pflegen/waschen-bei-aral/waschtipps.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9026743&contentId=7045626$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9032879&contentId=7060821$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/dieselkraftstoff.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001067&contentId=51122$
+RewriteRule     ^/(.*)$ http://www.aral.de/shop-und-bistro/schmierstoffe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9031004&contentId=7056708$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffe/gas/aral-autogas/umruestung.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7080151$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/managedlistingsection.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9013260&contentId=7025903$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/broschueren/broschueren-download.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001017&contentId=7014986$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/aral-geschichte.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7081353$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9038406&contentId=7071662$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/targetneutral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000525&contentId=58042$
+RewriteRule     ^/(.*)$ http://www.aral.de/ueber-aral/targetneutral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7079755$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7051817$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/sectiongenericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001064&contentId=51087$
+RewriteRule     ^/(.*)$ http://www.aralcard.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/genericarticle.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4001111&contentId=7029558$
+RewriteRule     ^/(.*)$ http://www.aral.de/presse/pressemeldungen.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/redirectthirdparty.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlistsubmit.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/flashpopup.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/fuelwatchlist.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/praktische-services/mein-aral.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9012997&contentId=7025773$
+RewriteRule     ^/(.*)$ http://www.aral.de/kontakt.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5010$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralcorporatehomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5010&contentId=51461$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/secure/myaccount.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4503308&contentId=51452$
+RewriteRule     ^/(.*)$ https://www.bpplus.com/pages/aral/Logon.asp?lstCountries=DEGER?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralefshomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=5800&contentId=57282$
+RewriteRule     ^/(.*)$ http://www.aralcard.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/stationFinderAction.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000653&contentId=58616$
+RewriteRule     ^/(.*)$ http://www.aral.de/aral/securityerrorpageredirect.jsp?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/iframe.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=9040586&contentId=7073859$
+RewriteRule     ^/(.*)$ https://www.aral.de/aral/secure/iframe.do?categoryId=9040586&contentId=7073859?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/aral/aralhomepage.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/annualstatement.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/kraftstoffpreis-archiv.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/monthlystatement.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/kraftstoffpreis-archiv.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond     %{SCRIPT_FILENAME} ^/toolserver/retaileurope/histFuelPrice.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=4000533&contentId=58642$
+RewriteRule     ^/(.*)$ http://www.aral.de/kraftstoffe-und-preise/kraftstoffpreise/kraftstoffpreis-archiv.html?  [NC,L,R=301]
+
+RewriteCond   %{HTTP_HOST}   ^(www\.)?aral.de
+RewriteRule   ^/BPGlobal/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/BPUS/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/DownloadServlet/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/Error_files_gasstation/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/FileFetchServlet/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/UNICA/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/akamai/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/ampm/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/aral/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/aralhighrez/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/arco/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/assets/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/beyondbp/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/bp_internet/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/business/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/castrol/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/cert/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/chinese/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/cms/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/cmsapproach/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/cmsmonitoring/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/cr/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/css/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/data/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/download/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/e_and_s/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/english/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/error_pages/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/favicon/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/fortunecookie/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/heliospower/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/htmlpageview/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/htmlpageviewdisplay/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/images/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/images_css/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/img/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/innovene/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/innovene1/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/investis/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/japanese/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/js/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/korean/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/liveassets/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/loadtesting/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/map/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/modules/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/netli/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/pdfcart/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/preview/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/restricted/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/retail/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/rss/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/secure/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/servlet/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/swf/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/toolserver/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/unicaloadtesting/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/unicaworking/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/videoplayer/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/w3c/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/wildbean/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/wildbeantool/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/working/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/xml/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/xv/(.*)$ http://www.aral.de/? [NC,L,R]
+RewriteRule   ^/xyz/(.*)$ http://www.aral.de/? [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond %{SCRIPT_FILENAME} ^(.*)/*.do$
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^/(.*)$ http://www.aral.de/? [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^(www\.)?aral.de
+RewriteCond %{SCRIPT_FILENAME} ^(.*)/*.jsp$
+RewriteCond %{QUERY_STRING} ^(.*)$
+RewriteRule ^/(.*)$ http://www.aral.de/? [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^aral.de$
+RewriteRule ^(.*)$ http://www.aral.de$1 [NC,L,R]

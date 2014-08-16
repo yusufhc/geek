@@ -1,0 +1,104 @@
+RewriteCond     %{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteRule     ^/$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond     %{SCRIPT_FILENAME} ^/wildbean/productlanding.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=1156&contentId=7052392$
+RewriteRule     ^/(.*)$ https://cafekeytag.co.nz?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond     %{SCRIPT_FILENAME} ^/wildbean/ampmhomepage.do$
+RewriteCond     %{QUERY_STRING} ^categoryId=1140&contentId=7025590$
+RewriteRule     ^/(.*)$ http://www.bp.com.au/?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond     %{SCRIPT_FILENAME} ^/wildbean/errorpage/securityerrorpage/securityerrorpage.do$
+RewriteCond     %{QUERY_STRING} ^$
+RewriteRule     ^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST}   ^(www\.)?wildbeancafe.com
+RewriteRule     ^/sa[/]*$   http://www.bp.com/en_za/on-the-road/south-africa/latest-offers/wild-bean-cafe-deals.html?  [NC,L,R=301]
+
+RewriteCond     %{HTTP_HOST}   ^(www\.)?wildbeancafe.com
+RewriteRule     ^/za[/]*$   http://www.bp.com/en_za/on-the-road/south-africa/latest-offers/wild-bean-cafe-deals.html?  [NC,L,R=301]
+
+RewriteCond   %{HTTP_HOST}   ^(www\.)?wildbeancafe.com
+RewriteRule   ^/BPGlobal/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/BPUS/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/DownloadServlet/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/Error_files_gasstation/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/FileFetchServlet/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/UNICA/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/akamai/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/ampm/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/aral/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/aralhighrez/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/arco/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/assets/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/beyondbp/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/bp_internet/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/business/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/castrol/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/cert/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/chinese/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/cms/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/cmsapproach/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/cmsmonitoring/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/cr/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/css/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/data/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/download/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/e_and_s/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/english/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/error_pages/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/favicon/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/fortunecookie/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/heliospower/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/htmlpageview/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/htmlpageviewdisplay/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/images/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/images_css/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/img/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/innovene/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/innovene1/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/investis/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/japanese/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/js/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/korean/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/liveassets/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/loadtesting/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/map/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/modules/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/netli/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/pdfcart/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/preview/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/restricted/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/retail/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/rss/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/secure/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/servlet/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/swf/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/toolserver/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/unicaloadtesting/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/unicaworking/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/videoplayer/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/w3c/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/wildbean/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/wildbeantool/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/working/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/xml/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/xv/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteRule   ^/xyz/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+
+RewriteCond%{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond%{SCRIPT_FILENAME} ^(.*)/*.do$
+RewriteCond%{QUERY_STRING} ^(.*)$
+RewriteRule^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+
+RewriteCond%{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond%{SCRIPT_FILENAME} ^(.*)/*.jsp$
+RewriteCond%{QUERY_STRING} ^(.*)$
+RewriteRule^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+
+RewriteCond %{HTTP_HOST} ^wildbeancafe.com$
+RewriteRule ^(.*)$ http://www.wildbeancafe.com/$1 [NC,L,R]
