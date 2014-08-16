@@ -1,5 +1,5 @@
 include_recipe 'apache2'
 
-service "apache2" do
-  action: start
+apache_site "default" do
+  enable true
 end
