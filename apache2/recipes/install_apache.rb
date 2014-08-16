@@ -1,5 +1,5 @@
 include_recipe 'apache2'
 
-service "apache" do
+service "apache2" do
   action: start
 end
