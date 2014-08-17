@@ -1,6 +1,6 @@
 include_recipe 'apache2'
 
-template "/etc/httpd/conf.d/" do
+template "/etc/httpd/conf.d/vhos.conf" do
 	source vhost.conf.erb
 	mode 0755
 	owner "root"
