@@ -28,7 +28,7 @@ backend web_pool_https
 mode tcp
 
 
-#<%= node[:opsworks][:layers][:lb][:name] %>
+#<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
 
 <% if node[:opsworks][:layers][:HAProxy] -%>
 # node[:opsworks][:layers][:haproxy]
