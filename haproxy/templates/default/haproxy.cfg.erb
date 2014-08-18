@@ -30,8 +30,14 @@ mode tcp
 
 #<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
 
-<% if node[:opsworks][:layers][:HAProxy] -%>
-# node[:opsworks][:layers][:haproxy]
+<% if node[:opsworks][:layers][:apache][:instances].length > 0 -%>
+<% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
+<%= "#{instance.ip}"%>
+<% end -%>
+<% end -%>
+
+<% if node[:opsworks][:layers][:lb][:name] == 'HAProxy' -%>
+# node[:opsworks][:layers][:lb][:name]
 <% end -%>
 
 <% if node[:opsworks][:layers][:web] -%>
