@@ -90,15 +90,15 @@ RewriteRule   ^/xml/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/pro
 RewriteRule   ^/xv/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
 RewriteRule   ^/xyz/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
 
-RewriteCond%{HTTP_HOST} ^(www\.)?wildbeancafe.com
-RewriteCond%{SCRIPT_FILENAME} ^(.*)/*.do$
-RewriteCond%{QUERY_STRING} ^(.*)$
-RewriteRule^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteCond		%{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond		%{SCRIPT_FILENAME} ^(.*)/*.do$
+RewriteCond		%{QUERY_STRING} ^(.*)$
+RewriteRule		^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
 
-RewriteCond%{HTTP_HOST} ^(www\.)?wildbeancafe.com
-RewriteCond%{SCRIPT_FILENAME} ^(.*)/*.jsp$
-RewriteCond%{QUERY_STRING} ^(.*)$
-RewriteRule^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
+RewriteCond		%{HTTP_HOST} ^(www\.)?wildbeancafe.com
+RewriteCond		%{SCRIPT_FILENAME} ^(.*)/*.jsp$
+RewriteCond		%{QUERY_STRING} ^(.*)$
+RewriteRule		^/(.*)$ http://www.bp.com/en_gb/on-the-road/united-kingdom/products-services/wild-bean-cafe.html? [NC,L,R]
 
-RewriteCond %{HTTP_HOST} ^wildbeancafe.com$
-RewriteRule ^(.*)$ http://www.wildbeancafe.com/$1 [NC,L,R]
+RewriteCond 	%{HTTP_HOST} ^wildbeancafe.com$
+RewriteRule 	^(.*)$ http://www.wildbeancafe.com/$1 [NC,L,R]
