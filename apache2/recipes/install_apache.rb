@@ -1,5 +1,5 @@
 include_recipe 'apache2'
-include_recipe 'apache2::mod_rewrite.rb'
+include_recipe 'apache2::mod_rewrite'
 
 template "/etc/httpd/conf.d/ssl.conf" do
 	source 'ssl.conf.erb'
