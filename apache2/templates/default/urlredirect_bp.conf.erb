@@ -12,7 +12,7 @@ RewriteCond     %{SCRIPT_FILENAME} ^/sectiongenericarticle.do$
 RewriteCond     %{QUERY_STRING} ^categoryId=9003494&contentId=7006600$
 RewriteRule     ^/(.*)$ http://www.bp.com/en/global/corporate/about-bp/company-information/code-of-conduct.html?  [NC,L,R=301]
 
-RewriteCond%{HTTP_HOST} ^(www\.)?bp.com
+RewriteCond		%{HTTP_HOST} ^(www\.)?bp.com
 RewriteCond     %{SCRIPT_FILENAME} ^/business/mapTool.do$
 RewriteCond     %{QUERY_STRING} ^toolId=1&categoryId=9038683&contentId=7074462$
 RewriteRule     ^/(.*)$ http://www.bp.com/en_au/australia/products-services/pricing/terminal-gate-pricing.html? [NC,L,R=301]
