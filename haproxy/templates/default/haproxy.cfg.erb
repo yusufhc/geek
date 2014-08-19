@@ -31,7 +31,7 @@ mode tcp
 #<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
 #<%= node[:opsworks][:layers][:apache][:instances].length.to_s %>
 
-<% if node[:opsworks][:layers][:apache][:instances].length > 0 -%>
+<% if node[:opsworks][:layers][:apache][:instances].length.to_i > 0 -%>
 # The length of the instances collection is > 0
 <% end -%>
 
