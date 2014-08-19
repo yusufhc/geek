@@ -35,7 +35,7 @@ mode tcp
 #<%= private_ip_array.length %>
 #<%= private_ip_array[0] %>
 
-<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " } -%>
+<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " }.to_s %>
 
 #server web1 web1:443 check
 #server web2 web2:443 check
@@ -49,7 +49,7 @@ frontend http-cfg
 backend web_pool_http
 mode tcp
 
-<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":80 check " } -%>
+<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":80 check " }[0].to_s %>
 
 #server web1 web1:80 check
 #server web2 web2:80 check
