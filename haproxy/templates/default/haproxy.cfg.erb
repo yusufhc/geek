@@ -35,7 +35,7 @@ mode tcp
 #<%= private_ip_array.length %>
 #<%= private_ip_array[0] %>
 
-<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance + " " + instance + ":443 check " }[0].to_s -%>
+<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " }[0].to_s -%>
 
 <% if node[:opsworks][:layers][:apache][:instances].length.to_i > 0 -%>
     <% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
