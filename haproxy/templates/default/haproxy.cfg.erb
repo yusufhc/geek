@@ -33,7 +33,7 @@ mode tcp
 
 <% if node[:opsworks][:layers][:apache][:instances].length.to_i > 0 -%>
     <% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
-        #<%= instance.ip.to_s %>
+        #<%= instance[:ip] %>
     <% end -%>
 <% end -%>
 
