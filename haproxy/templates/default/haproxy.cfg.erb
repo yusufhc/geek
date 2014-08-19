@@ -31,7 +31,7 @@ mode tcp
 #<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
 #<%= node[:opsworks][:layers][:apache][:instances].length.to_s %>
 
-#<% node[:opsworks][:layers][:apache][:instances].collect{ |instance, names| names['private_ip'] }[0].to_s %>
+#<% node[:opsworks][:layers][:apache][:instances].collect{ |instance, names| names['private_ip'] }.length.to_s %>
 
 <% if node[:opsworks][:layers][:apache][:instances].length.to_i > 0 -%>
     <% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
