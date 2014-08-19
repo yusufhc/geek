@@ -37,18 +37,6 @@ mode tcp
 #<%= #{instance.ip} %>
 <% end -%>
 
-<% if node[:opsworks][:layers][:lb][:name] == 'HAProxy' -%>
-# node[:opsworks][:layers][:lb][:name]
-<% end -%>
-
-<% if node[:opsworks][:layers][:web] -%>
-# node[:opsworks][:layers][:haproxy]
-<% end -%>
-
-<% if node[:opsworks][:layers][:lb].attribute?("HAProxy") -%>
-# node[:opsworks][:layers].attribute?("haproxy")
-<% end -%>
-
 #server web1 web1:443 check
 #server web2 web2:443 check
 
