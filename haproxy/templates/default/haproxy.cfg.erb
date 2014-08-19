@@ -29,6 +29,7 @@ mode tcp
 
 
 #<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
+#<%= node[:opsworks][:layers][:apache][:instances].length %>
 
 <% if node[:opsworks][:layers][:apache][:instances].length > 0 -%>
 <% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
