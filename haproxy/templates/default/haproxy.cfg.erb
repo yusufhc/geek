@@ -35,7 +35,10 @@ mode tcp
 #<%= private_ip_array.length %>
 #<%= private_ip_array[0] %>
 
-<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " }[0].to_s %>
+<% config_lines = node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " } -%>
+<% config_lines.each do |config_line| %>
+<%= config_line.to_s %>
+<% end %>
 
 #server web1 web1:443 check
 #server web2 web2:443 check
