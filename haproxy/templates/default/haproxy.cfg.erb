@@ -31,10 +31,7 @@ mode tcp
 #<%= node[:opsworks][:layers][:apache][:instances][:apache7][:ip] %>
 
 
-<% node[:opsworks][:layers][:apache][:instances].each do |instance| -%>
-# This is inside the loop
-#<%= #{instance.ip} %>
-<% end -%>
+
 
 #server web1 web1:443 check
 #server web2 web2:443 check
