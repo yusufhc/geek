@@ -33,11 +33,6 @@ mode tcp
 <%= config_line.to_s %>
 <% end %>
 
-#<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":443 check " }.each_line(',') |line| line.to_s -%>
-
-
-#server web1 web1:443 check
-#server web2 web2:443 check
 
 frontend http-cfg
         bind 0.0.0.0:80
@@ -52,9 +47,6 @@ mode tcp
 <% config_lines.each do |config_line| %>
 <%= config_line.to_s %>
 <% end %>
-
-#server web1 web1:80 check
-#server web2 web2:80 check
 
 
 listen admin
