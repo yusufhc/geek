@@ -52,7 +52,10 @@ frontend http-cfg
 backend web_pool_http
 mode tcp
 
-<%= node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":80 check " }[0].to_s %>
+<% config_lines = node[:opsworks][:layers][:apache][:instances].collect{ |instance| "server " + instance[0].to_s + " " + instance[0].to_s + ":80 check " } -%>
+<% config_lines.each do |config_line| %>
+<%= config_line.to_s %>
+<% end %>
 
 #server web1 web1:80 check
 #server web2 web2:80 check
